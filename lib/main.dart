@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MainApp());
+import 'package:get/get.dart';
+
+import 'infrastructure/navigation/navigation.dart';
+import 'infrastructure/navigation/routes.dart';
+
+void main() async {
+  var initialRoute = await Routes.initialRoute;
+  runApp(Main(initialRoute));
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class Main extends StatelessWidget {
+  final String initialRoute;
+  Main(this.initialRoute);
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return GetMaterialApp(
+      initialRoute: initialRoute,
+      getPages: Nav.routes,
+    );
   }
 }

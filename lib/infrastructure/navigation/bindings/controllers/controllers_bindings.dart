@@ -1,0 +1,1 @@
+export 'package:clima/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
