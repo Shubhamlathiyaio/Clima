@@ -24,6 +24,7 @@ extension SuperEdgeInsets on EdgeInsets {
   EdgeInsets get all16 => allF(16);
   EdgeInsets get all20 => allF(20);
   EdgeInsets get all24 => allF(24);
+  EdgeInsets get all40 => allF(40);
 
   //==============================================================================
   //     **   EdgeInsets From Horizontal  **
@@ -38,6 +39,7 @@ extension SuperEdgeInsets on EdgeInsets {
   EdgeInsets get h10 => hf(10);
   EdgeInsets get h12 => hf(12);
   EdgeInsets get h15 => hf(15);
+  EdgeInsets get h16 => hf(16);
   EdgeInsets get h20 => hf(20);
   EdgeInsets get h24 => hf(24);
 

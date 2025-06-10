@@ -25,33 +25,26 @@ class AppTheme {
     textTheme: AppTextTheme.appTextThemeLight,
   );
 
-  // ThemeData darkTheme = ThemeData(
-  //   scaffoldBackgroundColor: AppColors.bgOfDark,
-  //   brightness: Brightness.dark,
-  //   useMaterial3: true,
-  //   splashColor: AppColors.splash,
-  //   disabledColor: AppColors.grey,
-  //   primaryColor: AppColors.primary,
-  //   inputDecorationTheme: InputDecorationTheme(
-  //     hintStyle: roboto.w600.fs20.textColor(AppColors.textFieldLableOfDark),
-  //   ),
-  //   colorScheme: ColorScheme(
-  //     brightness: Brightness.dark,
-  //     primary: AppColors.primary,
-  //     onPrimary: AppColors.white,
-  //     secondary: AppColors.secondaryOfDark,
-  //     onSecondary: AppColors.black,
-  //     error: AppColors.error,
-  //     onError: AppColors.white,
-  //     surface: AppColors.surfaceOfDark,
-  //     onSurface: AppColors.grayA5OfDark,
-  //   ),
-  //   textTheme: TextTheme(
-  //     bodySmall: roboto.w400.fs12.textColor(AppColors.grayA5OfDark),
-  //     displayLarge: roboto.w600.fs18.primary,
-  //     labelLarge: roboto.w600.fs20.textColor(AppColors.textFieldLableOfDark),
-  //     labelMedium: roboto.w600.fs14.textColor(AppColors.grayA5OfDark),
-  //     labelSmall: roboto.w600.fs12.textColor(AppColors.grayA5OfDark),
-  //   ),
-  // );
+ static ThemeData darkTheme = ThemeData(
+  scaffoldBackgroundColor: AppColors.bgOfDark,
+  brightness: Brightness.dark,
+  useMaterial3: true,
+  primaryColor: AppColors.white, // White as primary in dark theme
+  splashColor: AppColors.splash,
+  disabledColor: AppColors.grey,
+  colorScheme: const ColorScheme(
+    brightness: Brightness.dark,
+    primary: AppColors.white,
+    onPrimary: AppColors.black,
+    secondary: AppColors.secondaryOfDark,
+    onSecondary: AppColors.onSurfaceOfDark,
+    error: AppColors.error,
+    onError: AppColors.white,
+    surface: AppColors.surfaceOfDark,
+    onSurface: AppColors.secondaryOfDark,
+  ),
+  textTheme: AppTextTheme.appTextThemeDark,
+);
+
+
 }

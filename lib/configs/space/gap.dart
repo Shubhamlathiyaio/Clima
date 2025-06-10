@@ -11,7 +11,9 @@ extension SuperBox on SizedBox {
   SizedBox hf([double no = 5]) => SizedBox(height: no.h);
 
   SizedBox get zero => hf(0);
+  SizedBox get h2 => hf(2);
   SizedBox get h => hf(5);
+  SizedBox get h6 => hf(6);
   SizedBox get h8 => hf(8);
   SizedBox get h10 => hf(10);
   SizedBox get h12 => hf(12);
@@ -19,6 +21,9 @@ extension SuperBox on SizedBox {
   SizedBox get h16 => hf(16);
   SizedBox get h20 => hf(20);
   SizedBox get h24 => hf(24);
+  SizedBox get h30 => hf(30);
+  SizedBox get h32 => hf(32);
+  SizedBox get h36 => hf(36);
   SizedBox get h40 => hf(40);
   SizedBox get h48 => hf(48);
   SizedBox get h80 => hf(80);
@@ -34,6 +39,7 @@ extension SuperBox on SizedBox {
 
   SizedBox get w => wf(5);
   SizedBox get w10 => wf(10);
+  SizedBox get w12 => wf(12);
   SizedBox get w15 => wf(15);
   SizedBox get w16 => wf(16);
   SizedBox get w20 => wf(20);
